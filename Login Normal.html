@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="CSS/Login Normal.css">
+    </head>
+    <body>
+        <main>
+            <div class="contenido">
+                <form id="loginForm" onsubmit="return login(event)" class="control">
+                    <h2>Iniciar sesión</h2>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                    <input type="text" id="email" name="email" placeholder="Email" required>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                    <div class="checkbox-login"> 
+                    <input type="checkbox">Acepto las condiciones
+                    </div>
+                    <input type="submit" value="ingresar">
+                    
+                    <p class="waos">Crear Cuenta si no la posee</p>
+                </form>
+                <p id="mensaje"></p>
+            </div>
+        </main>
+        
+        <script src="JS/Login Normal.js"></script>
+    </body>
+</html>
